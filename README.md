@@ -13,6 +13,8 @@ Rust will never leave memory unfree, by default. When Rust code executes, all da
 
 What this essentially means is that Rust compiled to WebAssembly and then executed on a WebAssembly VM, will always result in stateless operation; when a given function is complete the stack is either left with no values or a single valid Wasm value. Nothing persists for future function calls.
 
+## Wasm data types
+
 As we know, WebAssembly only has 4 data types at present:
 - i32
 - i64
